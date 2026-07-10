@@ -4,6 +4,8 @@ Educational specification for Little Logic Lab. **Every future puzzle belongs he
 
 Progression is mastery-based. Age is a recommendation only.
 
+The catalog and journey below describe the **full long-term path**. Shipping order and temporary unlock rules for a release may use a scaffolded subset—see **V1 vertical slice** in `Roadmap.md`. When those conflict, Roadmap wins for that release’s Progress unlocks; this file remains the educational destination.
+
 ## Learning journey order
 
 1. Matching  

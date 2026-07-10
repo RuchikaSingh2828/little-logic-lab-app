@@ -6,6 +6,10 @@ Record significant product or architectural decisions briefly. Newest entries at
 
 ## 2026-07-11
 
+### Decision: V1 uses a scaffolded curriculum slice
+
+**Reason:** The full journey in `Curriculum.md` is the long-term educational path. V1 ships Matching → Patterns → Rows → Columns → Mini Sudoku so we can validate the puzzle framework and calm UX without blocking on every intermediate concept. Deferred concepts stay in the curriculum; Progress unlocks for V1 follow the Roadmap slice, not the full prerequisite chain.
+
 ### Decision: Flutter + Riverpod + GoRouter
 
 **Reason:** Cross-platform support, strong ecosystem, and maintainable architecture for long-term development. Riverpod for testable state outside the UI; GoRouter for declarative navigation as features grow.
