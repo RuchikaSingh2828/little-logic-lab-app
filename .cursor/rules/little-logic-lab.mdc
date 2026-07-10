@@ -1,0 +1,24 @@
+---
+description: Little Logic Lab source of truth — vision, philosophy, and AI constraints
+alwaysApply: true
+---
+
+# Little Logic Lab — always apply
+
+Before architectural or product work, read and follow:
+
+- `AGENTS.md`
+- `docs/Vision.md`
+- `docs/Architecture.md`
+- `docs/Curriculum.md`
+
+Also respect `docs/UI-Guidelines.md`, `docs/CodingStandards.md`, and `docs/DECISIONS.md`.
+
+## Non-negotiables
+
+- Teach reasoning, not memorization; never reveal answers (hints ask questions).
+- No manipulative engagement / gamification (streaks, coins, leaderboards, pressure timers).
+- App adapts to the child; progress = concept mastery; age is only a recommendation.
+- Prefer simple, reusable, testable Flutter code; business logic outside UI; composition over inheritance.
+- New puzzles: update `docs/Curriculum.md` first. Significant choices: append `docs/DECISIONS.md`.
+- Do not add frameworks or product features without trade-offs.
