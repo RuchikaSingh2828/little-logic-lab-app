@@ -4,7 +4,7 @@
 
 **Goal:** Ship the app shell with a hybrid profile picker, Option C create-profile flow, and a static shared child-home mockup screen.
 
-**Architecture:** Riverpod + GoRouter app shell; `ChildProfile` domain + `shared_preferences` repository; feature screens under `lib/features/`; mockup JPEGs as full-bleed backgrounds with hotspot taps.
+**Architecture:** Riverpod + GoRouter app shell; `ChildProfile` domain + `shared_preferences` repository; feature screens under `lib/features/`; soft shared widgets and character avatar assets (mockup PNGs are design references only).
 
 **Tech Stack:** Flutter, flutter_riverpod, go_router, shared_preferences
 

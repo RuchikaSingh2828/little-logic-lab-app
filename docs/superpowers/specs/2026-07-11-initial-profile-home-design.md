@@ -11,7 +11,7 @@ First product surface for Little Logic Lab: a multi-child **profile picker** (vi
 
 - Replace the Flutter counter demo with the real app shell.
 - Let a household pick who is playing, create a new child profile, and open a calm shared home.
-- Look like the provided mockups via a **hybrid** approach (full-screen mockup images + hotspot / light overlays).
+- Look like the provided mockups via a **widget-built** soft UI (shared cards/avatars/theme), with mockup images kept only as design references.
 - Establish Riverpod + GoRouter + folder layout per `Architecture.md` / `CodingStandards.md`.
 
 ## Non-goals (V1)
@@ -34,15 +34,15 @@ App launch → /profiles
   Parents / Continue / tiles / See My Journey → no-op
 ```
 
-## UI approach (hybrid)
+## UI approach (widget-built)
 
 | Screen | Visual | Interaction |
 |--------|--------|-------------|
-| Profile picker | `assets/mockups/profile_picker.jpg` full-bleed | Transparent hit targets over 2×2 grid + Parent Zone ignored |
+| Profile picker | Soft cards, theme tokens, character avatar PNGs | Continue selects profile → `/home`; Add Child → create |
 | Create profile | Flutter Option C UI (name, age band, avatar placeholder) | Real form; saves profile |
-| Child home | `assets/mockups/child_home.jpg` full-bleed | Back hotspot; optional name overlay; other controls no-op |
+| Child home | Soft cards matching home mockup layout | Avatar returns to profiles; other controls no-op |
 
-Known limitation: profile-picker artwork still shows Ava/Arjun/Mia until a later widget rebuild; hit targets map to the real profile list by slot index (first three + Add Child).
+**Note (post-design):** V1 shipped as composed Flutter widgets rather than full-bleed mockup hotspots, so layout adapts across devices. Mockup PNGs under `assets/mockups/` remain design references only.
 
 ## Data model
 

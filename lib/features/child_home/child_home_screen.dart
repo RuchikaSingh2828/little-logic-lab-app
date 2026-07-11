@@ -21,11 +21,6 @@ class ChildHomeScreen extends ConsumerWidget {
         error: (error, _) => Center(child: Text('Something went wrong: $error')),
         data: (child) {
           if (child == null) {
-            WidgetsBinding.instance.addPostFrameCallback((_) {
-              if (context.mounted) {
-                context.go('/profiles');
-              }
-            });
             return const SizedBox.shrink();
           }
           return _ChildHomeBody(child: child);

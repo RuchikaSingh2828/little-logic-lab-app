@@ -16,7 +16,7 @@ Record significant product or architectural decisions briefly. Newest entries at
 
 ### Decision: Shared static child home shell
 
-**Reason:** Every child opens the same home after selection. Progress tiles, activity counts, and Parent Zone actions are visual-only until the progress engine and activities exist—avoids fake mastery metrics.
+**Reason:** Every child opens the same home after selection. Continue / activity / Parent Zone actions are visual-only until the progress engine and activities exist. Placeholder progress and activity counts in the mock layout are decorative sample chrome for V1—not live mastery metrics—and should be replaced when real progress lands.
 
 ### Decision: V1 uses a scaffolded curriculum slice
 

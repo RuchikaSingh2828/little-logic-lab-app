@@ -127,10 +127,10 @@ class PillButton extends StatelessWidget {
           style: FilledButton.styleFrom(
             backgroundColor: color,
             foregroundColor: Colors.white,
-            minimumSize: Size(compact ? 44 : 48, compact ? 40 : 48),
+            minimumSize: Size(compact ? 48 : 48, compact ? 48 : 52),
             padding: EdgeInsets.symmetric(
               horizontal: compact ? 14 : 18,
-              vertical: compact ? 8 : 12,
+              vertical: compact ? 10 : 12,
             ),
             shape: const StadiumBorder(),
           ),
