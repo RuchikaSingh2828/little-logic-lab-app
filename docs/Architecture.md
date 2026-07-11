@@ -93,4 +93,15 @@ Puzzle types plug into a common interface so new curriculum items reuse the fram
 - Riverpod
 - GoRouter
 
-Folder layout under `lib/` will evolve toward clean architecture (e.g. `core/`, `features/`, `shared/`) as V1 lands. Update this document when the concrete tree is established.
+Concrete `lib/` tree (initial entry UI):
+
+```
+lib/
+  app/           # MaterialApp.router, GoRouter, theme
+  core/profile/  # ChildProfile, repository, Riverpod providers
+  features/
+    profile_selection/  # picker + create profile
+    child_home/         # shared home visual shell
+  shared/        # reserved for design-system widgets
+  main.dart
+```

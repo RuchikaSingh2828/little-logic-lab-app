@@ -1,11 +1,13 @@
 # Miscellaneous
 *.class
-*.lock
 *.log
 *.pyc
 *.swp
 .buildlog/
 .history
+
+# Keep the app lockfile for reproducible builds
+!pubspec.lock
 
 
 
@@ -103,6 +105,9 @@ unlinked_spec.ds
 **/linux/flutter/generated_plugin_registrant.cc
 **/linux/flutter/generated_plugin_registrant.h
 **/linux/flutter/generated_plugins.cmake
+
+# Local brainstorm / agent artifacts
+.superpowers/
 
 # Coverage
 coverage/
